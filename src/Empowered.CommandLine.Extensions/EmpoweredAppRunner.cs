@@ -58,7 +58,8 @@ public class EmpoweredAppRunner<TRootCommand> : AppRunner<TRootCommand> where TR
                 serviceCollection.BuildServiceProvider(),
                 argumentModelResolveStrategy: ResolveStrategy.TryResolve,
                 commandClassResolveStrategy: ResolveStrategy.ResolveOrThrow
-            ).AddDebugExtensions();
+            );
+        this.AddDebugExtensions();
     }
 
     private static int ErrorHandler(CommandContext? context, Exception exception)

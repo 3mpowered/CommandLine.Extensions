@@ -7,7 +7,7 @@ namespace Empowered.CommandLine.Extensions.Tests;
 
 public class EmpoweredAppRunnerTests
 {
-    private class TestCommand(IAnsiConsole console)
+    public class TestCommand(IAnsiConsole console)
     {
         [DefaultCommand]
         public async Task<int> Test([Option]bool error)
@@ -24,9 +24,11 @@ public class EmpoweredAppRunnerTests
     [Fact]
     public void ShouldRunConsoleApplication()
     {
-        var appRunner = new EmpoweredAppRunner<TestCommand>("test");
-
-        appRunner.Run([]).Should().Be(0);
+        var runner = new EmpoweredAppRunner<TestCommand>("test");
+        runner
+            .Run()
+            .Should()
+            .Be(0);
     }
 
     [Fact]
