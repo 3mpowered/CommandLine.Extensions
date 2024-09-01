@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empowered.CommandLine.Extensions", "..\CommandLine.Extensions\src\Empowered.CommandLine.Extensions\Empowered.CommandLine.Extensions.csproj", "{019E0F7C-79BE-4940-A64B-5CA79EE9A2C4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empowered.CommandLine.Extensions.Tests", "test\Empowered.CommandLine.Extensions.Tests\Empowered.CommandLine.Extensions.Tests.csproj", "{A051446C-C7F2-4B80-8389-C9EB48D9A791}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{019E0F7C-79BE-4940-A64B-5CA79EE9A2C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{019E0F7C-79BE-4940-A64B-5CA79EE9A2C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{019E0F7C-79BE-4940-A64B-5CA79EE9A2C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{019E0F7C-79BE-4940-A64B-5CA79EE9A2C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A051446C-C7F2-4B80-8389-C9EB48D9A791}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A051446C-C7F2-4B80-8389-C9EB48D9A791}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A051446C-C7F2-4B80-8389-C9EB48D9A791}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A051446C-C7F2-4B80-8389-C9EB48D9A791}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

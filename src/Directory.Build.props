@@ -1,12 +1,12 @@
 <Project>
     <PropertyGroup>
-        <Title>TODO</Title>
+        <Title>Empowered.CommandLine.Extensions</Title>
         <Company>3mpowered</Company>
         <Authors>Simon Findling</Authors>
-        <Description>TODO</Description>
+        <Description>A set of CLI extensions containing a preconfigured AppRunner based on CommandDotNet and extension methods for Spectre.Console.</Description>
         <RepositoryType>git</RepositoryType>
-        <RepositoryUrl>TODO</RepositoryUrl>
-        <PackageProjectUrl>TODO</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/3mpowered/CommandLine.Extensions</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/3mpowered/CommandLine.Extensions</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>

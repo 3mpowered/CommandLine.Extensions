@@ -1,5 +1,5 @@
 {
-  "name": "TODO",
+  "name": "commandline.extensions",
   "scripts": {
     "prepare": "husky"
   },
@@ -66,10 +66,10 @@
         }
       ]
     ],
-    "repositoryUrl": "TODO",
+    "repositoryUrl": "https://github.com/3mpowered/CommandLine.Extensions",
     "includeSymbols": true,
     "usePackageVersion": true,
-    "projectPath": "./src/TODO"
+    "projectPath": "./src/Empowered.CommandLine.Extensions/Empowered.CommandLine.Extensions.csproj"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.4.1",
