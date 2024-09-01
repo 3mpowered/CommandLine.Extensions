@@ -1,0 +1,84 @@
+{
+  "name": "TODO",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "author": "3mpowered",
+  "license": "MIT",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "release": {
+    "branches": [
+      "main",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ],
+    "plugins": [
+      "@semantic-release/changelog",
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/github",
+      "@semantic-release/release-notes-generator",
+      "@droidsolutions-oss/semantic-release-nuget",
+      [
+        "@droidsolutions-oss/semantic-release-update-file",
+        {
+          "files": [
+            {
+              "path": [
+                "./src/Directory.Build.props"
+              ],
+              "type": "xml",
+              "replacements": [
+                {
+                  "key": "Version",
+                  "value": "${nextRelease.version}"
+                },
+                {
+                  "key": "InformationalVersion",
+                  "value": "${nextRelease.version}"
+                },
+                {
+                  "key": "RepositoryCommit",
+                  "value": "${nextRelease.gitHead}"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "./src/Directory.Build.props"
+          ],
+          "message": "chore(release): ${nextRelease.version} [skip ci]"
+        }
+      ]
+    ],
+    "repositoryUrl": "TODO",
+    "includeSymbols": true,
+    "usePackageVersion": true,
+    "projectPath": "./src/TODO"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.4.1",
+    "@commitlint/config-conventional": "^19.4.1",
+    "@droidsolutions-oss/semantic-release-nuget": "^2.0.1",
+    "@droidsolutions-oss/semantic-release-update-file": "^1.4.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "husky": "^9.1.5",
+    "semantic-release": "^24.1.0"
+  }
+}
