@@ -1,0 +1,23 @@
+name: build, test and release
+on:
+  push:
+    branches: [main, beta, alpha]
+  pull_request:
+    branches: [main, beta, alpha]
+jobs:
+  build:
+    uses: 3mpowered/Github.Action.Workflows/.github/workflows/build.yml@main
+  test:
+    needs: build
+    permissions:
+      pull-requests: write
+      checks: write
+    uses: 3mpowered/Github.Action.Workflows/.github/workflows/test.yml@main
+  release:
+    needs: test
+    permissions:
+      pull-requests: write
+      contents: write
+    uses: 3mpowered/Github.Action.Workflows/.github/workflows/release.yml@main
+    secrets: inherit
+    if: ${{ github.event_name == 'push' && (github.ref_name == 'main' || github.ref_name == 'beta' || github.ref_name == 'alpha')}}
