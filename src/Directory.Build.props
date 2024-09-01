@@ -1,0 +1,22 @@
+<Project>
+    <PropertyGroup>
+        <Title>TODO</Title>
+        <Company>3mpowered</Company>
+        <Authors>Simon Findling</Authors>
+        <Description>TODO</Description>
+        <RepositoryType>git</RepositoryType>
+        <RepositoryUrl>TODO</RepositoryUrl>
+        <PackageProjectUrl>TODO</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Version>1.0.0</Version>
+        <InformationalVersion>1.0.0</InformationalVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <InternalsVisibleTo Include="$(AssemblyName).Tests" />
+        <InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+    </ItemGroup>
+</Project>
