@@ -4,6 +4,7 @@ namespace Empowered.CommandLine.Extensions.Extensions;
 
 public static class AnsiConsoleExtensions
 {
+
     public static void Info(this IAnsiConsole console, string message) =>
         console.MarkupLineInterpolated($"[white]{message}[/]");
 
