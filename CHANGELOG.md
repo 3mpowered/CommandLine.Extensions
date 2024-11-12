@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/3mpowered/CommandLine.Extensions/compare/v1.0.0...v1.1.0) (2024-11-12)
+
+
+### Features
+
+* update microsoft.extensions.* dependencies ([65ea0e4](https://github.com/3mpowered/CommandLine.Extensions/commit/65ea0e4466679934ad2af59774a4cde0bcdb0261))
+
 # 1.0.0 (2024-09-01)
 
 
